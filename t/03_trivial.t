@@ -25,13 +25,13 @@ use ORLite::Migrate {
 	create       => 1,
 	file         => '$file',
 	timeline     => '$timeline',
-	user_version => 2,
+	user_version => 3,
 };
 
 1;
 END_PERL
 
 # The package should be migrated correctly
-is( Foo::Bar->pragma('user_version'), 2, 'New database migrated ok' );
+is( Foo::Bar->pragma('user_version'), 3, 'New database migrated ok' );
 ok( Foo::Bar::Foo->can('count'), 'Created Foo table ok' );
-is( Foo::Bar::Foo->count, 2, 'Found expected number of rows' );
+is( Foo::Bar::Foo->count, 3, 'Found expected number of rows' );

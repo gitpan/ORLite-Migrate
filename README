@@ -16,24 +16,24 @@ SYNOPSIS
 
       # migrate-1.pl - A trivial schema patch
       #!/usr/bin/perl
-  
-      use strict;
+      
+  use strict;
       use DBI ();
-  
-      # Locate the SQLite database
+      
+  # Locate the SQLite database
       my $file = <STDIN>;
       chomp($file);
       unless ( -f $file and -w $file ) {
           die "SQLite file $file does not exist";
       }
-  
-      # Connect to the SQLite database
+      
+  # Connect to the SQLite database
       my $dbh = DBI->connect("dbi:SQLite(RaiseError=>1):$file");
       unless ( $dbh ) {
         die "Failed to connect to $file";
       }
-  
-      $dbh->do( <<'END_SQL' );
+      
+  $dbh->do( <<'END_SQL' );
       create table foo (
           id integer not null primary key,
           name varchar(32) not null
