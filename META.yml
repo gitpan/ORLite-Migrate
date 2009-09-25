@@ -34,4 +34,4 @@ resources:
   ChangeLog: http://fisheye2.atlassian.com/changelog/cpan/trunk/ORLite-Migrate
   license: http://dev.perl.org/licenses/
   repository: http://svn.ali.as/cpan/trunk/ORLite-Migrate
-version: 1.04
+version: 1.05
