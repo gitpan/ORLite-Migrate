@@ -19,10 +19,10 @@ README
 t/01_compile.t
 t/02_main.t
 t/03_trivial.t
-t/97_meta.t
-t/98_pod.t
-t/99_pmv.t
 t/data/trivial/migrate-02.pl
 t/data/trivial/migrate-03.pl
 t/data/trivial/migrate-1.pl
 t/lib/Test.pm
+xt/meta.t
+xt/pmv.t
+xt/pod.t
