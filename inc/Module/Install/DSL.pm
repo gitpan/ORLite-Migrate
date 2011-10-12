@@ -4,7 +4,7 @@ package Module::Install::DSL;
 use strict;
 use vars qw{$VERSION $ISCORE};
 BEGIN {
-	$VERSION = '0.95';
+	$VERSION = '1.02';
 	$ISCORE  = 1;
 	*inc::Module::Install::DSL::VERSION = *VERSION;
 	@inc::Module::Install::DSL::ISA     = __PACKAGE__;
