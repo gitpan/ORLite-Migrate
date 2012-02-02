@@ -75,7 +75,7 @@ use DBI          ();
 use DBD::SQLite  ();
 use Params::Util ();
 
-our $VERSION = '1.09';
+our $VERSION = '1.10';
 
 
 
@@ -401,7 +401,7 @@ Adam Kennedy E<lt>adamk@cpan.orgE<gt>
 
 =head1 COPYRIGHT
 
-Copyright 2009 - 2011 Adam Kennedy.
+Copyright 2009 - 2012 Adam Kennedy.
 
 This program is free software; you can redistribute
 it and/or modify it under the same terms as Perl itself.
